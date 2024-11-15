@@ -173,7 +173,7 @@ def split_into_chunks(tokenizer, df: pd.DataFrame, replace_text_with_tags: bool,
 def get_data(tokenizer, clip_path, clip_train_id_path, clip_val_id_path, clip_test_id_path, replace_text_with_tags, max_seq_length, is_instruction_finetuned ) -> DatasetDict:
     """Get the CLIP data. 
     @param tokenizer is a Huggingface tokenizer.
-    @param clip_path is the path to the clip data.
+    @param clip_path is the path_to the clip data.
     @param replace_text_with_tags determines whether or not we modify the text to remove PHI.
     @param max_seq_length is the maximum sequence length."""
     df = load_data(clip_path)

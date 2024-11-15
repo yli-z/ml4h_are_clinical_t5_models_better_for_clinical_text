@@ -1,9 +1,11 @@
 
-MODEL_PATH="[path to model directory]"
-TRAIN_FILE_PATH="[path to train file]"
-VAL_FILE_PATH="[path to val file]"
-TEST_FILE_PATH="[path to test file]"
-OUTPUT_DIR="[path to output directory]"
+MODEL_PATH="[path_to_model_directory]"
+TRAIN_FILE_PATH="[path_to_train_file]"
+VAL_FILE_PATH="[path_to_val_file]"
+TEST_FILE_PATH="[path_to_test_file]"
+OUTPUT_DIR="[path_to_output_directory]"
+
+export PYTHONPATH=$PYTHONPATH:$(pwd)
 
 #  Use --replace-text-with-tags for the Clinical-T5(Lehman et al., 2023) model
 #  Use --is-instruction-finetuned for the FLAN-T5 model

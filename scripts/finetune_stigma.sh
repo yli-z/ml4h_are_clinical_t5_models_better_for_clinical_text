@@ -1,11 +1,12 @@
-MODEL_PATH="[path to model directory]"
-OUTPUT_DIR="[path to output directory]"
-DATA_PATH="[path to data directory]"
+MODEL_PATH="[path_to_model_directory]"
+OUTPUT_DIR="[path_to_output_directory]"
+DATA_PATH="[path_to_data_directory]"
 
+export PYTHONPATH=$PYTHONPATH:$(pwd)
 
 #  Use --is-instruction-finetuned for the FLAN-T5 model
 for KEYWORD in "adamant" "compliance" "other"
-done
+do
     for FOLD_INDEX in 0 1 2 3 4
     do
         python src/finetune_stigma.py \
